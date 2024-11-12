@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock High School Management - Students</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg bg-orange navbar-dark">
+    <a class="navbar-brand" href="#">Rock High School</a>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"><a class="nav-link" href="index.html">Dashboard</a></li>
+      <li class="nav-item"><a class="nav-link" href="students.html">Students</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Teachers</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Classes</a></li>
+    </ul>
+  </nav>
+
+  <!-- Student Management Content -->
+  <div class="container my-4">
+    <h3 class="text-center">Student Management</h3>
+    <div class="row mb-3">
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Search students...">
+      </div>
+      <div class="col text-right">
+        <button class="btn btn-orange" data-toggle="modal" data-target="#addStudentModal">Add Student</button>
+      </div>
+    </div>
+    
+    <!-- Student Table -->
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Class</th>
+          <th>Attendance</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Sample Student Row -->
+        <tr>
+            <td>1</td>
+            <td>Boniface katwe</td>
+            <td>4</td>
+            <td>95%</td>
+            <td>
+              <button class="btn btn-info btn-sm">View</button>
+              <button class="btn btn-warning btn-sm">Edit</button>
+              <button class="btn btn-danger btn-sm">Delete</button>
+            </td>
+          </tr> <tr>
+            <td>2</td>
+            <td>Kasozi Brain</td>
+            <td>10</td>
+            <td>55%</td>
+            <td>
+              <button class="btn btn-info btn-sm">View</button>
+              <button class="btn btn-warning btn-sm">Edit</button>
+              <button class="btn btn-danger btn-sm">Delete</button>
+            </td>
+          </tr> <tr>
+            <td>3</td>
+            <td>Swaburah Nambatya</td>
+            <td>7</td>
+            <td>75%</td>
+            <td>
+              <button class="btn btn-info btn-sm">View</button>
+              <button class="btn btn-warning btn-sm">Edit</button>
+              <button class="btn btn-danger btn-sm">Delete</button>
+            </td>
+          </tr> <tr>
+            <td>4</td>
+            <td>Prince Iraguha</td>
+            <td>9</td>
+            <td>65%</td>
+            <td>
+              <button class="btn btn-info btn-sm">View</button>
+              <button class="btn btn-warning btn-sm">Edit</button>
+              <button class="btn btn-danger btn-sm">Delete</button>
+            </td>
+          </tr> <tr>
+            <td>5</td>
+            <td>Kyentabona Gracious</td>
+            <td>6</td>
+            <td>93%</td>
+            <td>
+              <button class="btn btn-info btn-sm">View</button>
+              <button class="btn btn-warning btn-sm">Edit</button>
+              <button class="btn btn-danger btn-sm">Delete</button>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+
+  
+  <div class="modal fade" id="addStudentModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-orange text-white">
+          <h5 class="modal-title">Add New Student</h5>
+          <button type="button" class="close" data
+          <!-- Add Student Modal -->
+          <div class="modal fade" id="addStudentModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header bg-orange text-white">
+                  <h5 class="modal-title">Add New Student</h5>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <form action="student.php" method="POST">
+                    <div class="form-group">
+                      <label for="name">Name:</label>
+                      <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="class">Class:</label>
+                      <input type="number" class="form-control" id="class" name="class" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="attendance">Attendance (%):</label>
+                      <input type="number" class="form-control" id="attendance" name="attendance" required>
+                    </div>
+                    <button type="submit" class="btn btn-orange">Add Student</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </body>          

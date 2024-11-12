@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock High School Management - Dashboard</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .bg-orange { background-color: #ff9800; color: white; }
+    .card { border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body>
+  <!-- Header and Navbar -->
+  <nav class="navbar navbar-expand-lg bg-orange navbar-dark">
+    <a class="navbar-brand" href="#">Rock High School</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Dashboard</a></li>
+        <li class="nav-item"><a class="nav-link" href="students.html">Students</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Teachers</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Classes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Attendance</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Exams & Grades</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Dashboard Content -->
+  <div class="container my-4">
+    <h3 class="text-center">School Management Dashboard</h3>
+
+    <!-- Summary Statistics -->
+    <div class="row text-center">
+      <div class="col-md-3">
+        <div class="card bg-orange text-white mb-4">
+          <div class="card-body">
+            <h5 class="card-title">Total Students</h5>
+            <p class="card-text">450</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card bg-success text-white mb-4">
+          <div class="card-body">
+            <h5 class="card-title">Total Teachers</h5>
+            <p class="card-text">50</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card bg-primary text-white mb-4">
+          <div class="card-body">
+            <h5 class="card-title">Classes</h5>
+            <p class="card-text">20</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card bg-warning text-white mb-4">
+          <div class="card-body">
+            <h5 class="card-title">Total Fees Collected</h5>
+            <p class="card-text">$200,000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Attendance Summary and Upcoming Events -->
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card mb-4">
+          <div class="card-header bg-orange text-white">
+            Attendance Summary
+          </div>
+          <div class="card-body">
+            <p>Monthly Attendance Rate: <strong>93%</strong></p>
+            <p>Absentees Today: <strong>15</strong></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card mb-4">
+          <div class="card-header bg-primary text-white">
+            Upcoming Events
+          </div>
+          <div class="card-body">
+            <p>Parent-Teacher Meeting: <strong>Oct 30</strong></p>
+            <p>Midterm Exams Start: <strong>Nov 10</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Announcements -->
+    <div class="card mb-4">
+      <div class="card-header bg-orange text-white">
+        Announcements
+      </div>
+      <div class="card-body">
+        <p>- School Sports Day is scheduled for December 5.</p>
+        <p>- Final exams will be held in January.</p>
+      </div>
+    </div>
+
+    <!-- Quick Links to Other Pages -->
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <a href="students.html" class="btn btn-orange btn-block">Manage Students</a>
+      </div>
+      <div class="col-md-4 mb-3">
+        <a href="#" class="btn btn-info btn-block">Manage Teachers</a>
+      </div>
+      <div class="col-md-4 mb-3">
+        <a href="#" class="btn btn-success btn-block">View Attendance</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-orange text-center text-white py-3">
+    <p>&copy; 2024 Rock High School Management System</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
